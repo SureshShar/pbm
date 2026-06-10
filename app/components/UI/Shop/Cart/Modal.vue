@@ -263,10 +263,10 @@ async function submitOrder() {
 
     if (response.success) {
       showSuccess("Your order placed successfully.");
-      const cartHistory = getLocalData(`cartHistory_${route.query.pageId}`) || [];
+      const cartHistory = getLocalData(`cartHistory_${route.query.id}`) || [];
 
       setLocalData("userName", customerName.value);
-      setLocalData(`cartHistory_${route.query.pageId}`, [
+      setLocalData(`cartHistory_${route.query.id}`, [
         {
           messages: messages.value,
           totalAmount: totalAmount.value,
@@ -303,7 +303,7 @@ function emptyCart() {
 function resetCart() {
   modelValue.value = false;
   showForm.value = false;
-  setLocalData(`cartItems_${route.query.pageId}`, []);
+  setLocalData(`cartItems_${route.query.id}`, []);
 }
 
 // watch for Modal open or close and scroll disable

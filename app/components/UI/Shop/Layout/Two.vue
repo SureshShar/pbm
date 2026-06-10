@@ -79,7 +79,7 @@ const { getLocalData } = useLocalStorage();
 
 // Cart items
 const cartItems = computed(
-  () => getLocalData(`cartItems_${route.query.pageId}`) || []
+  () => getLocalData(`cartItems_${route.query.id}`) || []
 );
 
 // Check if item is already in cart

@@ -112,7 +112,7 @@ const emit = defineEmits(["addToCart", "removeFromCart", "deleteItem", "confirmU
 const route = useRoute();
 const { getLocalData } = useLocalStorage();
 
-const cartItems = computed(() => getLocalData(`cartItems_${route.query.pageId}`) || []);
+const cartItems = computed(() => getLocalData(`cartItems_${route.query.id}`) || []);
 const isAddCart = computed(() => cartItems.value.some((cartItem) => cartItem.id === modelValue.value.id));
 
 function handleCartItem() {

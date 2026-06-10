@@ -33,7 +33,7 @@
         <div class="w-full my-8">
           <UniversalButton
             heading="Show Page"
-            @clicked="navigateTo(`/mypage?pageId=${userId}`)"
+            @clicked="navigateTo(`/page?id=${userId}`)"
             :disabled="!userId"
           />
         </div>
