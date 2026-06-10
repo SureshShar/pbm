@@ -60,3 +60,12 @@ SET json_column_name = JSON_INSERT(
 -2 23 kb become 122 kb by Schema version-3
 -3 23 kb become 100kb by old schema by version 2.5
 -4 12 kb old format become 8 Kb
+
+# Saved command 
+`
+make a newtable in same database name users_page_query. it will have rows like that     
+page_id     TEXT PRIMARY KEY,
+user_query  TEXT,
+created_at  INTEGER NOT NULL,    
+the page_id and created_at inserted in table at the time of this api run "server\api\admin\onboarding.post.js". this column have max write or delete operation so i am going to put it in new table name "users_page_query". Remove this column from old table   name "users_page_data".   
+`

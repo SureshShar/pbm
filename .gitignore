@@ -18,6 +18,11 @@ logs
 .fleet
 .idea
 
+# SQLite database — keep the file locally, never commit it
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
 # Local env files
 .env
 .env.*
