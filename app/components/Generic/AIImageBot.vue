@@ -119,7 +119,7 @@ async function sendMessage() {
   }
   userInput.value = "";
   loading.value = false;
-  setLocalData(`aiAssistant_${route.params.userId}`, messages.value.slice(-5));
+  setLocalData(`aiAssistant_${route.query.pageId}`, messages.value.slice(-5));
 }
 
 function scrollToBottom() {
@@ -137,7 +137,7 @@ function typeOut(text) {
     if (i >= text.length) {
       messages.value[lastIdx].typing = false;
       clearInterval(typingTimer);
-      setLocalData(`aiAssistant_${route.params.userId}`, messages.value.slice(-5));
+      setLocalData(`aiAssistant_${route.query.pageId}`, messages.value.slice(-5));
       return;
     }
     messages.value[lastIdx].content += text[i++];
@@ -150,7 +150,7 @@ onMounted(async () => {
   const { marked } = await import("marked");
   renderMarkdown.value = marked.parse;
 
-  const saved = getLocalData(`aiAssistant_${route.params.userId}`);
+  const saved = getLocalData(`aiAssistant_${route.query.pageId}`);
   if (saved) {
     messages.value = saved;
     await nextTick();

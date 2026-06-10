@@ -129,7 +129,7 @@ const route = useRoute();
 const { getLocalData, setLocalData, getInstanceData } = useLocalStorage();
 
 const isEditMode = computed(() => getLocalData("editMode") === true);
-const cartItems = computed(() => getLocalData(`cartItems_${route.params.userId}`) || []);
+const cartItems = computed(() => getLocalData(`cartItems_${route.query.pageId}`) || []);
 
 // All unique categories from list
 const uniqueCategories = computed(() =>
@@ -171,7 +171,7 @@ function handleAddToCart(item) {
       quantity: i === 0 ? 1 : 0,
     })),
   };
-  setLocalData(`cartItems_${route.params.userId}`, [
+  setLocalData(`cartItems_${route.query.pageId}`, [
     ...cartItems.value,
     itemModified,
   ]);
@@ -186,7 +186,7 @@ function handleRemoveFromCart(item) {
   if (index !== -1) {
     cartItems.value.splice(index, 1);
   }
-  setLocalData(`cartItems_${route.params.userId}`, cartItems.value);
+  setLocalData(`cartItems_${route.query.pageId}`, cartItems.value);
 }
 
 // Delete an item from cart

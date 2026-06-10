@@ -39,7 +39,7 @@ const noDateFound = ref(false);
 const route = useRoute();
 const { setInstanceData, getInstanceData } = useLocalStorage();
 
-const userId = computed(() => route.params.userId);
+const userId = computed(() => route.query.pageId);
 // const path = computed(() => route.path);
 
 // Shop Open, Closed, null not available

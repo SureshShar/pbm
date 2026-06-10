@@ -102,8 +102,8 @@ const { getLocalData } = useLocalStorage();
 const commanButtonClass = "flex w-10 h-10 items-center justify-center rounded-md text-bglight shadow-md transition duration-300 ease-in-out";
 
 // Cart items and history
-const cartItems = computed(() => getLocalData(`cartItems_${route.params.userId}`) || []);
-const cartHistory = computed(() => getLocalData(`cartHistory_${route.params.userId}`) || []);
+const cartItems = computed(() => getLocalData(`cartItems_${route.query.pageId}`) || []);
+const cartHistory = computed(() => getLocalData(`cartHistory_${route.query.pageId}`) || []);
 
 // Scroll to top function
 function scrollToTop() {

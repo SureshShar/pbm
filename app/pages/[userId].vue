@@ -1,15 +1,5 @@
-<template>
-  <MainPageUserPage />
-</template>
-
 <script setup>
+// Redirect old /:userId path-based URLs → /mypage?pageId=:userId
 const route = useRoute()
-
-// Multi cache logic
-useRouteCache((helper) =>
-  helper
-    .setCacheable()
-    .setMaxAge(604800)
-    .addTags([`url:${route.path}`]),
-);
+await navigateTo(`/mypage?pageId=${route.params.userId}`, { redirectCode: 301 })
 </script>
