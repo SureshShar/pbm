@@ -1,46 +1,34 @@
-// server/api/delete-user-query-key.post.js
+// Replaces MySQL JSON_REMOVE — fetch → delete key in JS → write back
 export default defineEventHandler(async (event) => {
   try {
-    const { pageId, authToken, authId, key } = await readBody(event);
+    const { pageId, authToken, authId, key } = await readBody(event)
 
     if (!pageId || !key) {
-      return getErrorMessage(
-        400,
-        "Missing payload data",
-        sendError,
-        createError,
-        event
-      );
+      return getErrorMessage(400, 'Missing payload data', sendError, createError, event)
     }
 
-    const config = useRuntimeConfig();
-    let data = null;
+    const config = useRuntimeConfig()
+    let row = null
 
-    if (authToken === config.superAdminAuthToken) { // Super Admin update
-       data = await getDBPool(config).query(
-          `UPDATE users_page_data SET user_query = JSON_REMOVE(COALESCE(user_query, '{}'), ?) WHERE page_id = ?`,
-          [`$.${key}`, pageId]
-        );
-    } else if (authId) { // Regular admin user_query
-        data = await getDBPool(config).query(
-          `UPDATE users_page_data SET user_query = JSON_REMOVE(COALESCE(user_query, '{}'), ?) WHERE page_id = ? AND created_at = ?`,
-          [`$.${key}`, pageId, authId]
-        );
+    if (authToken === config.superAdminAuthToken) {
+      row = db.select({ userQuery: usersPageData.userQuery }).from(usersPageData)
+        .where(eq(usersPageData.pageId, pageId)).get()
+    } else if (authId) {
+      row = db.select({ userQuery: usersPageData.userQuery }).from(usersPageData)
+        .where(and(eq(usersPageData.pageId, pageId), eq(usersPageData.createdAt, Number(authId)))).get()
+    }
+
+    if (row) {
+      const current = row.userQuery ?? {}
+      delete current[key]
+      db.update(usersPageData).set({ userQuery: current }).where(eq(usersPageData.pageId, pageId)).run()
     }
 
     return {
       success: true,
       message: `Key '${key}' deleted successfully`,
-      deleted: data,
-    };
-
+    }
   } catch (err) {
-    return getErrorMessage(
-      err.statusCode || 500,
-      err.message || "Internal server error",
-      sendError,
-      createError,
-      event
-    );
+    return getErrorMessage(err.statusCode || 500, err.message || 'Internal server error', sendError, createError, event)
   }
-});
+})

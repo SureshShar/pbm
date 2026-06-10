@@ -1,99 +1,54 @@
-// Update all user meta info dynamically
+// Update user meta info dynamically
 export default defineEventHandler(async (event) => {
-  const config = useRuntimeConfig();
+  const config = useRuntimeConfig()
 
   try {
-    const { pageId, authToken, authId, updates = {} } = await readBody(event);
+    const { pageId, authToken, authId, updates = {} } = await readBody(event)
 
-    // Primary validation
     if (!pageId) {
-      return getErrorMessage(
-        400,
-        "Missing Payload data",
-        sendError,
-        createError,
-        event
-      );
+      return getErrorMessage(400, 'Missing Payload data', sendError, createError, event)
     }
 
-    // Validate authToken
-    if (authToken || authId) {
-      // List of allowed fields that can be updated
-      const allowedFields = [
-        "email_id",
-        "contact_number",
-        // "telegram_id",
-        "user_available",
-        "page_layout",
-      ];
+    if (!authToken && !authId) {
+      return getErrorMessage(400, 'Invalid authToken', sendError, createError, event)
+    }
 
-      // Filter only allowed fields that have values
-      const fieldsToUpdate = {};
-      Object.keys(updates).forEach((key) => {
-        if (
-          allowedFields.includes(key) &&
-          updates[key] !== undefined &&
-          updates[key] !== null &&
-          updates[key] !== ""
-        ) {
-          fieldsToUpdate[key] = updates[key];
-        }
-      });
+    const FIELD_MAP = {
+      email_id:       'emailId',
+      contact_number: 'contactNumber',
+      user_available: 'userAvailable',
+      page_layout:    'pageLayout',
+    }
 
-      // If no valid fields to update
-      if (Object.keys(fieldsToUpdate).length === 0) {
-        return getErrorMessage(
-          400,
-          "No valid fields to update",
-          sendError,
-          createError,
-          event
-        );
+    const setObj = {}
+    const updatedFields = []
+    for (const [field, value] of Object.entries(updates)) {
+      const col = FIELD_MAP[field]
+      if (col && value !== undefined && value !== null && value !== '') {
+        setObj[col] = value
+        updatedFields.push(field)
       }
+    }
 
-      // Build dynamic SET clause
-      const setClause = Object.keys(fieldsToUpdate).map((field) => `${field} = ?`).join(", ");
+    if (updatedFields.length === 0) {
+      return getErrorMessage(400, 'No valid fields to update', sendError, createError, event)
+    }
 
-      // Prepare values array (update values + pageId)
-      const values = [...Object.values(fieldsToUpdate), pageId];
+    if (authToken === config.superAdminAuthToken) {
+      db.update(usersPageData).set(setObj).where(eq(usersPageData.pageId, pageId)).run()
+    } else if (authId) {
+      db.update(usersPageData).set(setObj)
+        .where(and(eq(usersPageData.pageId, pageId), eq(usersPageData.createdAt, Number(authId))))
+        .run()
+    }
 
-      // console.log("Updating fields:", authToken, config.superAdminAuthToken, authId, pageId, fieldsToUpdate);
-      if (authToken === config.superAdminAuthToken) { // Super Admin update
-        await getDBPool(config).query(
-          `UPDATE users_page_data SET ${setClause} WHERE page_id = ?`,
-          values
-        );
-      } else if (authId) { // Regular admin user update
-        await getDBPool(config).query(
-          `UPDATE users_page_data SET ${setClause} WHERE page_id = ? AND created_at = ?`,
-          [ ...values , authId ]
-        );
-      }
-
-      return {
-        success: true,
-        message: "Fields updated successfully",
-        data: {
-          updatedFields: Object.keys(fieldsToUpdate),
-        },
-        statusCode: 200,
-      };
-    } else {
-      return getErrorMessage(
-        400,
-        "Invalid authToken",
-        sendError,
-        createError,
-        event
-      );
+    return {
+      success: true,
+      message: 'Fields updated successfully',
+      data: { updatedFields },
+      statusCode: 200,
     }
   } catch (err) {
-    return getErrorMessage(
-      err.statusCode || 500,
-      err.statusMessage || "Internal Server Error",
-      sendError,
-      createError,
-      event
-    );
+    return getErrorMessage(err.statusCode || 500, err.statusMessage || 'Internal Server Error', sendError, createError, event)
   }
-});
+})

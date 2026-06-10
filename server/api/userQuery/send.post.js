@@ -1,40 +1,30 @@
-// server/api/update-user-query-example.post.js
+// Replaces MySQL JSON_SET — fetch → mutate in JS → write back
 export default defineEventHandler(async (event) => {
   try {
-    const { pageId, key, value } = await readBody(event);
+    const { pageId, key, value } = await readBody(event)
 
     if (!pageId || !key || !value) {
-      return getErrorMessage(
-        400,
-        "Missing payload data",
-        sendError,
-        createError,
-        event
-      );
+      return getErrorMessage(400, 'Missing payload data', sendError, createError, event)
     }
 
-    const config = useRuntimeConfig();
+    const row = db.select({ userQuery: usersPageData.userQuery }).from(usersPageData)
+      .where(eq(usersPageData.pageId, pageId)).get()
 
-    const [result] = await getDBPool(config).query(
-      `UPDATE users_page_data SET user_query = JSON_SET(COALESCE(user_query, '{}'), ?, ?) WHERE page_id = ?`, 
-      [`$.${key}`, value, pageId]
-    );
+    const current = row?.userQuery ?? {}
+    current[key] = value
+
+    db.update(usersPageData)
+      .set({ userQuery: current })
+      .where(eq(usersPageData.pageId, pageId))
+      .run()
 
     return {
       success: true,
-      message: "User query updated successfully",
+      message: 'User query updated successfully',
       pageId,
-      data: result
-    };
-
+    }
   } catch (err) {
-    console.error("Error in update-user-query:", err);
-    return getErrorMessage(
-      err.statusCode || 500,
-      err.message || "Internal server error",
-      sendError,
-      createError,
-      event
-    );
+    console.error('Error in update-user-query:', err)
+    return getErrorMessage(err.statusCode || 500, err.message || 'Internal server error', sendError, createError, event)
   }
-});
+})

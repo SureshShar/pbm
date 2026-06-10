@@ -1,46 +1,28 @@
 export default defineEventHandler(async (event) => {
   try {
-    const { pageId, authId } = await readBody(event);
+    const { pageId, authId } = await readBody(event)
 
-    // ✅ Validate required fields
     if (!pageId || !authId) {
-      return getErrorMessage(
-        400,
-        "Missing required fields: pageId and authId",
-        sendError,
-        createError,
-        event
-      );
+      return getErrorMessage(400, 'Missing required fields: pageId and authId', sendError, createError, event)
     }
 
-    const [rows] = await getDBPool(useRuntimeConfig()).query(
-      "SELECT page_data, email_id, contact_number, user_available, page_layout FROM users_page_data WHERE page_id = ? AND created_at = ?",
-      [pageId, authId]
-    );
+    const row = db
+      .select({
+        page_data:      usersPageData.pageData,
+        email_id:       usersPageData.emailId,
+        contact_number: usersPageData.contactNumber,
+        user_available: usersPageData.userAvailable,
+        page_layout:    usersPageData.pageLayout,
+      })
+      .from(usersPageData)
+      .where(and(eq(usersPageData.pageId, pageId), eq(usersPageData.createdAt, Number(authId))))
+      .get()
 
-    if (rows.length > 0) {
-      return {
-        success: true,
-        data: rows[0],
-        statusCode: 200,
-      };
-    } else {
-      return {
-        success: true,
-        data: null,
-        statusCode: 200,
-      };
-    }
+    return { success: true, data: row ?? null, statusCode: 200 }
   } catch (err) {
-    console.error("Error in onboarding POST handler:", err);
-    return getErrorMessage(
-      err.statusCode || 500,
-      err.statusMessage || "Internal Server Error",
-      sendError,
-      createError,
-      event
-    );
+    console.error('Error in getAdminUserData POST handler:', err)
+    return getErrorMessage(err.statusCode || 500, err.statusMessage || 'Internal Server Error', sendError, createError, event)
   }
-});
+})
 
 // In use

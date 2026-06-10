@@ -6,20 +6,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: process.env.SERVER_ENV === "developmentLocal" },
   runtimeConfig: {
-    // databaseUrl: process.env.DATABASE_URL,
     telegramBotToken: process.env.BOT_TOKEN,
 
     // AI
     aiBaseURL: process.env.AI_BASE_URL,
     aiApiKey: process.env.AI_API_KEY,
     aiModel: process.env.AI_MODEL,
-
-    // MySQL
-    mysqlHost: process.env.MYSQL_HOST,
-    mysqlUser: process.env.MYSQL_USER,
-    mysqlPassword: process.env.MYSQL_PASSWORD,
-    mysqlDatabase: process.env.MYSQL_DATABASE,
-    mysqlPort: process.env.MYSQL_PORT,
 
     // Super Admin Credentials
     superAdminPassword: process.env.SUPERADMIN_PASSWORD,
@@ -58,6 +50,12 @@ export default defineNuxtConfig({
     },
     disableCacheOverviewLogMessage:
       process.env.SERVER_ENV !== "developmentLocal",
+  },
+  nitro: {
+    // Prevent bundling of the native better-sqlite3 module
+    externals: {
+      external: ['better-sqlite3'],
+    },
   },
   vite: {
     optimizeDeps: {

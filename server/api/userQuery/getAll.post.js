@@ -1,45 +1,24 @@
-// server/api/get-user-query.get.js
 export default defineEventHandler(async (event) => {
   try {
-    const { pageId, authToken, authId } = await readBody(event);
+    const { pageId, authToken, authId } = await readBody(event)
 
     if (!pageId) {
-      return getErrorMessage(
-        400,
-        "Missing payload data",
-        sendError,
-        createError,
-        event
-      );
+      return getErrorMessage(400, 'Missing payload data', sendError, createError, event)
     }
 
-    const config = useRuntimeConfig();
-    let data = null;
+    const config = useRuntimeConfig()
+    let row = null
 
-    if (authToken === config.superAdminAuthToken) { // Super Admin update
-       data = await getDBPool(config).query(
-          `SELECT user_query FROM users_page_data WHERE page_id = ?`,
-          [pageId]
-        );
-    } else if (authId) { // Regular admin user_query
-        data = await getDBPool(config).query(
-          `SELECT user_query FROM users_page_data WHERE page_id = ? AND created_at = ?`,
-          [pageId , authId ]
-        );
+    if (authToken === config.superAdminAuthToken) {
+      row = db.select({ userQuery: usersPageData.userQuery }).from(usersPageData)
+        .where(eq(usersPageData.pageId, pageId)).get()
+    } else if (authId) {
+      row = db.select({ userQuery: usersPageData.userQuery }).from(usersPageData)
+        .where(and(eq(usersPageData.pageId, pageId), eq(usersPageData.createdAt, Number(authId)))).get()
     }
 
-    return {
-      success: true,
-      data: data?.[0]?.[0]?.user_query || null
-    };
-
+    return { success: true, data: row?.userQuery ?? null }
   } catch (err) {
-    return getErrorMessage(
-      err.statusCode || 500,
-      err.message || "Internal server error",
-      sendError,
-      createError,
-      event
-    );
+    return getErrorMessage(err.statusCode || 500, err.message || 'Internal server error', sendError, createError, event)
   }
-});
+})
