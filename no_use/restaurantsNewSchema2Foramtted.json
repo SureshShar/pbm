@@ -1,0 +1,2309 @@
+{
+    "schemaVersion": "2.5",
+    "category": "restaurants",
+    "header": {
+        "id": "header",
+        "title": "RajRestaurant",
+        "image": {
+            "src": "/images/avatar.svg",
+            "alt": "उपयोगकर्ता अवतार"
+        }
+    },
+    "heroSection": {
+        "id": "hero",
+        "title": "Offer: Get 10% extra off",
+        "text": "Get 10% extra off",
+        "image": {
+            "src": "",
+            "alt": "Hero image"
+        },
+        "location": "",
+        "resumeLink": "/resource/menu.webp",
+        "timing": "कृपया सुबह 7 बजे से रात 10 बजे के बीच कॉल या संदेश करें।",
+        "address": "अक्षय नगर 1st ब्लॉक 1st क्रॉस, राममूर्ति नगर, बेंगलुरु-560016"
+    },
+    "page": {
+        "id": "MainPage",
+        "sections": [
+            {
+                "id": "cartItems",
+                "title": "",
+                "description": "",
+                "blocks": [
+                    {
+                        "id": "gal-1",
+                        "type": "cartItem",
+                        "title": "",
+                        "items": {
+                            "keys": [
+                                "id",
+                                "hide",
+                                "type",
+                                "title",
+                                "srtdsc",
+                                "costs",
+                                "category",
+                                "itemType",
+                                "isVeg",
+                                "image"
+                            ],
+                            "values": [
+                                [
+                                    "1",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Malai Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 160
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "2",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Chatpata Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "3",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Chur Chur Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "4",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Cocktail Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "5",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Achari Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "6",
+                                    false,
+                                    "cartItem",
+                                    "Pudhina Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "7",
+                                    false,
+                                    "cartItem",
+                                    "Masala Stuffed Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "8",
+                                    false,
+                                    "cartItem",
+                                    "Afghani Stuffed Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "9",
+                                    false,
+                                    "cartItem",
+                                    "Butter Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "10",
+                                    false,
+                                    "cartItem",
+                                    "Lemon Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "11",
+                                    false,
+                                    "cartItem",
+                                    "Cream Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "12",
+                                    false,
+                                    "cartItem",
+                                    "Reshmi Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "13",
+                                    false,
+                                    "cartItem",
+                                    "Paneer Shyam Savera",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "14",
+                                    false,
+                                    "cartItem",
+                                    "Paneer Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "TANDOORI CHAAP",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "15",
+                                    false,
+                                    "cartItem",
+                                    "Haryali Paneer Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "16",
+                                    false,
+                                    "cartItem",
+                                    "Malai Paneer Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "17",
+                                    false,
+                                    "cartItem",
+                                    "Achari Paneer Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "18",
+                                    false,
+                                    "cartItem",
+                                    "Masala Soya Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "19",
+                                    false,
+                                    "cartItem",
+                                    "Malai Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 160
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "20",
+                                    false,
+                                    "cartItem",
+                                    "Haryali Soya Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 160
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "21",
+                                    false,
+                                    "cartItem",
+                                    "Mushroom Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 150
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "22",
+                                    false,
+                                    "cartItem",
+                                    "Malai Mushroom Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 160
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "23",
+                                    false,
+                                    "cartItem",
+                                    "Pudhina Mushroom Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 160
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "24",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Achari Mushroom Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 190
+                                        }
+                                    ],
+                                    "TIKKA",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "25",
+                                    false,
+                                    "cartItem",
+                                    "Veg Seekh Kabab",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 140
+                                        }
+                                    ],
+                                    "KABAB",
+                                    "kabab",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "26",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Haryali Seekh Kabab",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 150
+                                        }
+                                    ],
+                                    "KABAB",
+                                    "kabab",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "27",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Reshmi Kabab",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 150
+                                        }
+                                    ],
+                                    "KABAB",
+                                    "kabab",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "28",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Achari Seekh Kabab",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 150
+                                        }
+                                    ],
+                                    "KABAB",
+                                    "kabab",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "29",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Diet Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 190
+                                        }
+                                    ],
+                                    "GYM LOVER",
+                                    "chaaap",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "30",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Grilled Lemon Soya Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 190
+                                        }
+                                    ],
+                                    "GYM LOVER",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "31",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Grilled Mushroom Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 190
+                                        }
+                                    ],
+                                    "GYM LOVER",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "32",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Grilled Kabab",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 0
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 200
+                                        }
+                                    ],
+                                    "GYM LOVER",
+                                    "kabab",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "33",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Tandoori Platter",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 0
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 200
+                                        }
+                                    ],
+                                    "GYM LOVER",
+                                    "platter",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "34",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Grilled Paneer Tikka",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "GYM LOVER",
+                                    "tikka",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "35",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Chur Chur Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 190
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "36",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Chatpata Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 190
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "37",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Crunchy Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 190
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "38",
+                                    false,
+                                    "cartItem",
+                                    "Malai Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "39",
+                                    false,
+                                    "cartItem",
+                                    "Cream Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "40",
+                                    false,
+                                    "cartItem",
+                                    "Soya Tikka Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "41",
+                                    false,
+                                    "cartItem",
+                                    "Pudhina Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "42",
+                                    false,
+                                    "cartItem",
+                                    "Malai Tikka Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "43",
+                                    false,
+                                    "cartItem",
+                                    "Paneer Tikka Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "44",
+                                    false,
+                                    "cartItem",
+                                    "Achari Paneer Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "45",
+                                    false,
+                                    "cartItem",
+                                    "Afghani Paneer Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "46",
+                                    false,
+                                    "cartItem",
+                                    "Haryali Paneer Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "47",
+                                    false,
+                                    "cartItem",
+                                    "Afghani Stuff Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "48",
+                                    false,
+                                    "cartItem",
+                                    "Masala Stuff Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "49",
+                                    false,
+                                    "cartItem",
+                                    "Lemon Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "50",
+                                    false,
+                                    "cartItem",
+                                    "Seekh Kabab Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 150
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "51",
+                                    false,
+                                    "cartItem",
+                                    "Haryali Seekh Kabab Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 160
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "52",
+                                    false,
+                                    "cartItem",
+                                    "Reshmi Seekh Kabab Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "53",
+                                    false,
+                                    "cartItem",
+                                    "Achari Chaap Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "54",
+                                    false,
+                                    "cartItem",
+                                    "Cream Onion Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 0
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 80
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "55",
+                                    false,
+                                    "cartItem",
+                                    "Masala Onion Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 0
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 70
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "56",
+                                    false,
+                                    "cartItem",
+                                    "Malai Mushroom Tikka Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "57",
+                                    false,
+                                    "cartItem",
+                                    "Pudhina Mushroom Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 170
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "58",
+                                    false,
+                                    "cartItem",
+                                    "Achari Mushroom Tikka Roll",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 180
+                                        }
+                                    ],
+                                    "ROLLS",
+                                    "roll",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "59",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Chaap Changezi",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 150
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 250
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "60",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Chaap Butter Masala",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 130
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 230
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "61",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Chaap Rogan Josh",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 140
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 240
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "62",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Paneer Rogan Josh",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 150
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 250
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "63",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Veg Butter Chicken",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 140
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 240
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "64",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Veg Mutton Raraa",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 150
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 250
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "65",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Dal Makhnni",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 100
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 160
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "66",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Paneer Taka-Tak",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 130
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 230
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "67",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Chaap Taka-Tak",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 130
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 230
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "68",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Veg Keema Kaleji",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 120
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 220
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "69",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Veg Chilli Chicken",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 130
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 230
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "70",
+                                    false,
+                                    "cartItem",
+                                    "Tawa Kabab",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 120
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 200
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "71",
+                                    false,
+                                    "cartItem",
+                                    "Tawa Paneer",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 120
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 200
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "72",
+                                    false,
+                                    "cartItem",
+                                    "Paneer Korma",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 130
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 230
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "73",
+                                    false,
+                                    "cartItem",
+                                    "Chaap Korma",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 120
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 220
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "74",
+                                    false,
+                                    "cartItem",
+                                    "Tawa Mushroom",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 120
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 210
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "75",
+                                    false,
+                                    "cartItem",
+                                    "Kadai Paneer",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 130
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 230
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "76",
+                                    false,
+                                    "cartItem",
+                                    "PCC Matki Chaap",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 170
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 300
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "77",
+                                    false,
+                                    "cartItem",
+                                    "Shahi Paneer",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 110
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 200
+                                        }
+                                    ],
+                                    "MAIN COURSE",
+                                    "main",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "78",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Tandoori Veg Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 60
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 110
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "79",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Tandoori Agni Veg Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 70
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 120
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "80",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Veg Achari Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 70
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 120
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "81",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Veg Haryali Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 80
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 120
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "82",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Tandoori Paneer Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 70
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 120
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "83",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Afghani Paneer Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 80
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 130
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "84",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Achari Paneer Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 80
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 130
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "85",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Haryali Paneer Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 80
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 130
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "86",
+                                    false,
+                                    "cartItem",
+                                    "PCC Spl. Cocktail Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 140
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "87",
+                                    false,
+                                    "cartItem",
+                                    "Veg Kurkure Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 80
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 120
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ],
+                                [
+                                    "88",
+                                    false,
+                                    "cartItem",
+                                    "Paneer Kurkure Momos",
+                                    "",
+                                    [
+                                        {
+                                            "size": "Half",
+                                            "price": 90
+                                        },
+                                        {
+                                            "size": "Full",
+                                            "price": 140
+                                        }
+                                    ],
+                                    "MOMOS SPECIAL",
+                                    "momos",
+                                    true,
+                                    {
+                                        "src": "",
+                                        "alt": ""
+                                    }
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gallery",
+                "title": "पल जो संजोए गए",
+                "description": "यहाँ हर तस्वीर पंजाबी ढाबा की एक अनूठी याद और अनुभव को दर्शाती है — हमारे ढाबे की यात्रा को तस्वीरों के माध्यम से देखें!",
+                "blocks": [
+                    {
+                        "id": "gal-1",
+                        "type": "imageTitle",
+                        "title": "Gallery",
+                        "items": {
+                            "keys": [
+                                "id",
+                                "label",
+                                "image"
+                            ],
+                            "values": [
+                                [
+                                    "g1",
+                                    "",
+                                    [
+                                        "",
+                                        "img"
+                                    ]
+                                ],
+                                [
+                                    "g2",
+                                    "",
+                                    [
+                                        "",
+                                        "img"
+                                    ]
+                                ],
+                                [
+                                    "g3",
+                                    "",
+                                    [
+                                        "",
+                                        "img"
+                                    ]
+                                ],
+                                [
+                                    "g4",
+                                    "",
+                                    [
+                                        "",
+                                        "img"
+                                    ]
+                                ],
+                                [
+                                    "g5",
+                                    "",
+                                    [
+                                        "",
+                                        "img"
+                                    ]
+                                ],
+                                [
+                                    "g6",
+                                    "",
+                                    [
+                                        "",
+                                        "img"
+                                    ]
+                                ],
+                                [
+                                    "g7",
+                                    "",
+                                    [
+                                        "",
+                                        "img"
+                                    ]
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "message",
+                "title": "मुझे संदेश भेजें",
+                "description": "कोई सवाल है या संपर्क करना चाहते हैं? सीधे मुझे संदेश भेजें!",
+                "blocks": [
+                    {
+                        "id": "msg-1",
+                        "type": "message",
+                        "chatId": ""
+                    }
+                ]
+            },
+            {
+                "id": "socials",
+                "title": "Social Media",
+                "description": "",
+                "hideHader": true,
+                "blocks": [
+                    {
+                        "id": "soc-1",
+                        "type": "socialLink",
+                        "title": "Follow me",
+                        "items": {
+                            "keys": [
+                                "id",
+                                "image",
+                                "href"
+                            ],
+                            "values": [
+                                [
+                                    "s1",
+                                    [
+                                        "/images/socialMedia/2.svg",
+                                        "facebook"
+                                    ],
+                                    "https://www.facebook.com/chaysutta"
+                                ],
+                                [
+                                    "s2",
+                                    [
+                                        "/images/socialMedia/3.svg",
+                                        "instagram"
+                                    ],
+                                    "https://www.instagram.com/chaysutta"
+                                ],
+                                [
+                                    "s3",
+                                    [
+                                        "/images/socialMedia/4.svg",
+                                        "whatsapp"
+                                    ],
+                                    "https://wa.me/910000000000"
+                                ]
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "extra": {
+        "cartLabel": "आपका टेबल नंबर",
+        "hideVegNonVegIcon": false
+    }
+}

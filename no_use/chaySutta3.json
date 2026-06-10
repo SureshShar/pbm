@@ -1,0 +1,104 @@
+{
+    "schemaVersion": "3.0",
+    "category": "clothShop",
+    "header": {
+        "id": "header",
+        "title": "RajCloths",
+        "image": {
+            "src": "/images/avatar.svg",
+            "alt": "Shop logo"
+        }
+    },
+    "heroSection": {
+        "id": "hero",
+        "title": "राज क्लॉथ्स में आपका स्वागत है!",
+        "text": "ट्रेंडी और आरामदायक कपड़ों का बेहतरीन कलेक्शन। अभी खरीदें और अपने स्टाइल को नया रूप दें।",
+        "image": {
+            "src": "",
+            "alt": "Raj Cloths"
+        },
+        "location": "",
+        "resumeLink": "/resource/menu.webp",
+        "timing": "सुबह 10 बजे से रात 9 बजे तक, आपकी सेवा में हमेशा तैयार।",
+        "address": "MG Road, बेंगलुरु-560001"
+    },
+    "page": {
+        "id": "MainPage",
+        "sections": [
+            {
+                "id": "cartItems",
+                "title": "",
+                "description": "टी-शर्ट, जीन्स, शर्ट और बच्चों के कपड़े – हर मौके और उम्र के लिए बेहतरीन कलेक्शन।",
+                "blocks": [
+                    {
+                        "id": "cloth-1",
+                        "type": "cartItem",
+                        "title": "",
+                        "items": {
+                            "keys": ["id", "hide", "type", "title", "srtdsc", "costs", "category", "itemType", "isVeg", "image"],
+                            "values": [
+                                ["1", false, "cartItem", "टी-शर्ट", "कॉटन से बनी आरामदायक और स्टाइलिश टी-शर्ट।", [{"size": "S & M", "price": 299}, {"size": "L & XL", "price": 399}, {"size": "XXL", "price": 449}], "tshirt", "new", true, {"src": "", "alt": "टी-शर्ट"}],
+                                ["2", false, "cartItem", "जीन्स", "डेनिम जीन्स – रोज़मर्रा पहनने के लिए टिकाऊ और फैशनेबल।", [{"size": "30-34", "price": 799}, {"size": "36", "price": 949}], "jeans", "new", true, {"src": "", "alt": "जीन्स"}]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "gallery",
+                "title": "यादें और स्टाइल",
+                "description": "यहाँ हर तस्वीर फैशन और स्टाइल का एहसास कराती है।",
+                "blocks": [
+                    {
+                        "id": "gal-1",
+                        "type": "imageTitle",
+                        "title": "गैलरी",
+                        "items": {
+                            "keys": ["id", "label", "image"],
+                            "values": [
+                                ["1", "टी-शर्ट कलेक्शन", {"src": "", "alt": "टी-शर्ट कलेक्शन"}],
+                                ["2", "जीन्स कलेक्शन", {"src": "", "alt": "जीन्स कलेक्शन"}]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "message",
+                "title": "मुझे संदेश भेजें",
+                "description": "कोई सवाल है या ऑर्डर करना चाहते हैं? सीधे टेलीग्राम पर संदेश भेजें!",
+                "blocks": [
+                    {
+                        "id": "msg-1",
+                        "hide": false,
+                        "unique": true,
+                        "type": "message"
+                    }
+                ]
+            },
+            {
+                "id": "socials",
+                "title": "सोशल मीडिया पर जुड़ें",
+                "description": "",
+                "hideHader": true,
+                "blocks": [
+                    {
+                        "id": "soc-1",
+                        "type": "socialLink",
+                        "title": "हमें फॉलो करें",
+                        "items": {
+                            "keys": ["id", "image", "href"],
+                            "values": [
+                                ["s1", {"src": "/images/socialMedia/2.svg", "alt": "facebook"}, "https://www.facebook.com/chaysutta"]
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "extra": {
+        "cartLabel": "आपका ऑर्डर नंबर",
+        "hideVegNonVegIcon": true
+    }
+}

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin*
+Disallow: /super*   ,
+Disallow: /login*,
+
+Disallow: /tailwind*,
+
+Comment: 'For pageby.me',
+Sitemap: 'https://pageby.me/sitemap.xml',

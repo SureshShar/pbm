@@ -1,0 +1,30 @@
+{
+  "name": "pageby.me",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build --dotenv .env",
+    "dev": "nuxt dev --dotenv .env",
+    "generate": "nuxt generate --dotenv .env",
+    "preview": "nuxt preview --dotenv .env",
+    "postinstall": "nuxt prepare --dotenv .env",
+    "analyze": "npx nuxt analyze"
+  },
+  "dependencies": {
+    "compressorjs": "^1.2.1",
+    "marked": "^17.0.4",
+    "multer": "^2.1.1",
+    "mysql2": "^3.20.0",
+    "nuxt": "^4.4.2",
+    "nuxt-multi-cache": "^4.0.3",
+    "ofetch": "^1.5.1",
+    "openai": "^6.32.0",
+    "pica": "^9.0.1",
+    "qrcode": "^1.5.4",
+    "vue": "^3.5.30",
+    "vue-router": "^5.0.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0"
+  }
+}

@@ -1,0 +1,3 @@
+<template>
+    <LazyMainPageTest />
+</template>
