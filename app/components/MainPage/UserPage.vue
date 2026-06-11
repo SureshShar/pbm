@@ -37,7 +37,7 @@ const pageData = ref(null);
 const noDateFound = ref(false);
 
 const route = useRoute();
-const { setInstanceData, getInstanceData } = useLocalStorage();
+const { setInstanceData, getInstanceData, setLocalData } = useLocalStorage();
 
 const userId = computed(() => route.query.id);
 // const path = computed(() => route.path);
@@ -96,6 +96,23 @@ useHead({
   ],
 });
 
+onMounted(async () => {
+  try {
+    const response = await useApi("userData", { id: userId.value });
+
+    if (response && response.success && response.data) {
+      pageData.value = response.data.page_data;
+      setUserPageInstaneData(response, setInstanceData);
+      setLocalData("pageId", userId.value);
+      noDateFound.value = false;
+    } else {
+      noDateFound.value = true;
+    }
+  } catch (error) {
+    console.error("Error fetching user data:", error);
+  }
+});
+
 // Lazy async data fetching (runs in SSR + client)
 // const { data } = await useLazyAsyncData(`userData_${userId.value}`, () => useApi("userData", { id: userId.value }));
 
@@ -109,20 +126,4 @@ useHead({
 //   },
 //   { immediate: true }
 // );
-
-onMounted(async () => {
-  try {
-    const response = await useApi("userData", { id: userId.value });
-
-    if (response && response.success && response.data) {
-      pageData.value = response.data.page_data;
-      setUserPageInstaneData(response, setInstanceData);
-      noDateFound.value = false;
-    } else {
-      noDateFound.value = true;
-    }
-  } catch (error) {
-    console.error("Error fetching user data:", error);
-  }
-});
 </script>
