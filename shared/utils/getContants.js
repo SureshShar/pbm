@@ -18,5 +18,6 @@ export default function () {
     ALLOWED_MIME_TYPE,
     MIME_TYPE,
     MAX_FILES: 5, // Max files allowed per upload
+    DB_PATH: "/home/admin/apps/db/data/pbm.db", // Path to the SQLite database file
   };
 }

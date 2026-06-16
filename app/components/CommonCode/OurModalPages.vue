@@ -12,7 +12,7 @@
     <UniversalP class="mb-6 text-base leading-relaxed">
       <!-- नीचे दिए गए लिंक पर जाकर एक सब्जी दुकान की वेबसाइट का नमूना देखें:
       <NuxtLink
-        to="/3"
+        to="/page?id=3"
         class="ml-1 text-primary font-semibold underline hover:text-primary-1"
       >
         👉 Demo Website
@@ -56,25 +56,25 @@
 
 <script setup>
 const shopLinks = [
-  { to: "/1", label: "Manoj" },
-  { to: "/2", label: "चाय दुकान" },
-  { to: "/3", label: "सब्जी दुकान" },
-  { to: "/4", label: "पंजाबी ढाबा" },
-  { to: "/5", label: "Electric Shop" },
-  { to: "/6", label: "General Store" },
-  { to: "/7", label: "Juice Shop" },
-  { to: "/8", label: "Makeup Shop" },
-  { to: "/9", label: "प्रधानजी मोमोज़" },
-  { to: "/10", label: "राज ढाबा (No Image)*" },
-  { to: "/11", label: "कपड़ा दुकान" },
-  { to: "/12", label: "Hair salon" },
-  { to: "/13", label: "Bakery Shop" },
-  { to: "/14", label: "Mobile Shop" },
-  { to: "/15", label: "राज आइसक्रीम" },
-  { to: "/16", label: "पानी पूरी दुकान" },
-  { to: "/17", label: "Burger Shop" },
-  { to: "/18", label: "चावल दुकान" },
-  { to: "/19", label: "Pizza Shop" },
-  { to: "/20", label: "मसाला भंडार" },
+  { to: "/page?id=1", label: "Manoj" },
+  { to: "/page?id=2", label: "चाय दुकान" },
+  { to: "/page?id=3", label: "सब्जी दुकान" },
+  { to: "/page?id=4", label: "पंजाबी ढाबा" },
+  { to: "/page?id=5", label: "Electric Shop" },
+  { to: "/page?id=6", label: "General Store" },
+  { to: "/page?id=7", label: "Juice Shop" },
+  { to: "/page?id=8", label: "Makeup Shop" },
+  { to: "/page?id=9", label: "प्रधानजी मोमोज़" },
+  { to: "/page?id=10", label: "राज ढाबा (No Image)*" },
+  { to: "/page?id=11", label: "कपड़ा दुकान" },
+  { to: "/page?id=12", label: "Hair salon" },
+  { to: "/page?id=13", label: "Bakery Shop" },
+  { to: "/page?id=14", label: "Mobile Shop" },
+  { to: "/page?id=15", label: "राज आइसक्रीम" },
+  { to: "/page?id=16", label: "पानी पूरी दुकान" },
+  { to: "/page?id=17", label: "Burger Shop" },
+  { to: "/page?id=18", label: "चावल दुकान" },
+  { to: "/page?id=19", label: "Pizza Shop" },
+  { to: "/page?id=20", label: "मसाला भंडार" },
 ];
 </script>

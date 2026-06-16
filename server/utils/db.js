@@ -8,7 +8,9 @@ import * as schema from '../database/schema'
 export { eq, and, or, sql, asc, desc, count } from 'drizzle-orm'
 export { usersPageData } from '../database/schema'
 
-const dbPath = process.env.DATABASE_URL ?? resolve(process.cwd(), 'data/pbm.db')
+const constants = getContants();
+
+const dbPath = resolve(process.cwd(), constants.DB_PATH)
 mkdirSync(dirname(dbPath), { recursive: true })
 
 const sqlite = new Database(dbPath)

@@ -98,7 +98,7 @@ const showAddress = ref(false);
 const showTiming = ref(false);
 const modelValue = defineModel("modelValue");
 
-const url = computed(() => `https://pageby.me/${props.userId}`);
+const url = computed(() => `https://pageby.me/page?id=${props.userId}`);
 const actionButtons = computed(() => [
   {
     key: "call",

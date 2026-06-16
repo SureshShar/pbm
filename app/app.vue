@@ -14,14 +14,14 @@
 
 <script setup>
 const { initializeAllLocalData } = useLocalStorage();
-const route = useRouter();
+const route = useRoute();
 const domain = "https://pageby.me";
 // const domain = "http://localhost:3001";
 
 const metaTitle = "Welcome to Pageby.me – Create Your Own Page Easily";
 const metaDescription = "Create your portfolio, visiting card, or shop page in minutes on Pageby.me. Customize and share your profile with ease.";
 const metaKeywords = "Pageby.me, page builder, portfolio, visiting card, shop page, create page, customize profile";
-const metaUrl = route.path ? domain + "/" + route.path : domain;
+const metaUrl = route.path ? domain + route.fullPath : domain;
 
 // This generates a fresh, random URL every time you call it
 function getImgUrl() {

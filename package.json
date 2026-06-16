@@ -8,7 +8,8 @@
     "generate": "nuxt generate --dotenv .env",
     "preview": "nuxt preview --dotenv .env",
     "postinstall": "nuxt prepare --dotenv .env",
-    "analyze": "npx nuxt analyze"
+    "analyze": "npx nuxt analyze",
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "compressorjs": "^1.2.1",
